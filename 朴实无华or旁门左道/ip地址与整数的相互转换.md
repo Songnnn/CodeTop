@@ -2,7 +2,7 @@
 
 思路肯定是先转成二进制，再转成十进制res。首先将string按“.”分开，再stoi转成整数，得到10，0，3，193。10是ip地址的第一段，即0到8位，由于ip地址总共有32位，所以让10的二进制左移24位即可。0左移16位，3左移8位，194左移0位，将得到的四位左移之后的数一起做**或运算**，即可得到最终的结果。图示如下：
 
-![image-20211227162000201](C:\Users\tcsns\AppData\Local\Programs\Typora\resources\Docs\刷题记录\images\IP地址与整数的相互转换.png)
+![image-20211227162000201](https://github.com/Songnnn/CodeTop/blob/main/images/IP地址与整数的相互转换.png)
 
 代码如下：
 
