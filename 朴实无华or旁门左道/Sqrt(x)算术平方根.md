@@ -40,5 +40,5 @@ public:
 
 还可以用牛顿迭代法，求C的平方根其实就是求$y=x^2-C$的零点，我们任取一个x0，在(x0, y)上作切线，随后得到一个更接近零点的x1，继续这个操作，就可以无限逼近零点，图示如下：
 
-![image-20220125105602702](C:\Users\hp\Desktop\x的平方根.png)
+![image-20220125105602702](https://github.com/Songnnn/CodeTop/blob/main/images/x%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9.png)
 
