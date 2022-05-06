@@ -7,7 +7,7 @@
 当prices[i]大于prices[i-1]时，有两种情况：
 
 - prices[i-1]被卖出了，那我们直接改在prices[i]卖出即可，此时利润要比dp[i-1]多出prices[i] - prices[i-1]，即dp[i] = dp[i - 1] + prices[i] - prices[i - 1]
-- prices[i]没有被卖出，那我们直接买入prices[i-1]，卖出prices[i]即可（要注意，prices[i-1]之前不会有更低的价格可以买入了），即dp[i] = dp[i - 1] + prices[i] - prices[i - 1];
+- prices[i-1]没有被卖出，那我们直接买入prices[i-1]，卖出prices[i]即可（要注意，prices[i-1]之前不会有更低的价格可以买入了），即dp[i] = dp[i - 1] + prices[i] - prices[i - 1];
 
 可以看到两种情况是一样的。
 
